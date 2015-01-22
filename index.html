@@ -3,17 +3,17 @@
 
 <head>
 
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-  <title>Question Generator</title>
+    <title>Question Generator</title>
 
-  <meta name="robots" content="noindex">
+    <meta name="robots" content="noindex">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
 
     <script src="js/prefixfree.min.js"></script>
@@ -22,48 +22,45 @@
 
 </head>
 
-<body>
+
 
   <body ng-app="QuestionApp">
   <div ng-controller="CluesCtrl">
 
-    <div class="question-view">
-        <!--<div class="head">
+    <!--<div class="head">
       <h2 class="inset">Trivia Questions</h2>
     </div>-->
 
-        <div class="content">
-            <ul class="clues" ng-repeat="clue in clues | orderBy:value">
-                <li class="clue" ng-if="clue.value != null">
-                    <div class="clue-top">
+    <div class="content">
+      <ul class="clues" ng-repeat="clue in clues | orderBy:value">
+        <li class="clue" ng-if="clue.value != null">
+          <div class="clue-top">
             <span class="value">
               <strong>{{ clue.value + ' '}}</strong>Points
             </span>
             <span class="category pull-right">
               <strong>Category: </strong>{{ clue.category.title }}
             </span>
-                    </div>
+          </div>
 
-                    <div class="clue-middle">
+          <div class="clue-middle">
             <span class="question">
               <strong>Question: </strong><br>
               <span class="indent">{{ clue.question }}</span>
             </span>
-                    </div>
+          </div>
 
-                    <div class="clue-bottom">
+          <div class="clue-bottom">
             <span class="answer">
               <strong>Answer: </strong><br>
               <span class="indent">{{ clue.answer }}</span>
             </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
   </div>
-</body>
 
   <script src='https://codepen.io/assets/libs/fullpage/angular.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js'></script>
