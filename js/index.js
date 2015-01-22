@@ -1,7 +1,7 @@
 var app = angular.module("QuestionApp", []);
 
 app.controller("CluesCtrl", function($scope, $http) {
-  var url = 'https://trivia-zachari.c9.io/api/random?count=10';
+  var url = 'https://trivia-zachari.c9.io/api/random?count=50';
   $http.get(url).
     success(function(data, status, headers, config) {
       console.log(data);
