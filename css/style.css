@@ -2,7 +2,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
   /* background: #AEF9D5; */
-  background: #6E7C89;
+  /*background: #6E7C89;*/
+  background: #354458;
+  padding-top: 10px;
 }
 
 ul {
