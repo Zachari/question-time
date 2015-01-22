@@ -27,37 +27,39 @@
   <body ng-app="QuestionApp">
   <div ng-controller="CluesCtrl">
 
-    <!--<div class="head">
+    <div class="question-view">
+        <!--<div class="head">
       <h2 class="inset">Trivia Questions</h2>
     </div>-->
 
-    <div class="content">
-      <ul class="clues" ng-repeat="clue in clues | orderBy:value">
-        <li class="clue" ng-if="clue.value != null">
-          <div class="clue-top">
-            <span class="value"> 
+        <div class="content">
+            <ul class="clues" ng-repeat="clue in clues | orderBy:value">
+                <li class="clue" ng-if="clue.value != null">
+                    <div class="clue-top">
+            <span class="value">
               <strong>{{ clue.value + ' '}}</strong>Points
             </span>
             <span class="category pull-right">
               <strong>Category: </strong>{{ clue.category.title }}
             </span>
-          </div>
+                    </div>
 
-          <div class="clue-middle">
-            <span class="question"> 
+                    <div class="clue-middle">
+            <span class="question">
               <strong>Question: </strong><br>
               <span class="indent">{{ clue.question }}</span>
             </span>
-          </div>
+                    </div>
 
-          <div class="clue-bottom">
-            <span class="answer"> 
+                    <div class="clue-bottom">
+            <span class="answer">
               <strong>Answer: </strong><br>
               <span class="indent">{{ clue.answer }}</span>
             </span>
-          </div>
-        </li>
-      </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 
   </div>
